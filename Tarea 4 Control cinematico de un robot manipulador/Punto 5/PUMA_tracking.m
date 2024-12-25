@@ -70,6 +70,8 @@ for t = 0:dt:10.
 
     pAr=[pAr p]; pdAr=[pdAr pd]; eAr=[eAr e]; 
     qAr=[qAr q]; daAr=[daAr da]; tAr=[tAr t];
+
+    exportgraphics(gcf,'PumaTrajectoryTracking.gif','Append',true);
 end
 
 figure(); 

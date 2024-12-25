@@ -54,6 +54,7 @@ q=q+dt*(da); %Rough estimation of new q
 xAr=[xAr x]; xdAr=[xdAr xd]; eAr=[eAr e]; 
 qAr=[qAr q]; daAr=[daAr da]; tAr=[tAr t];
 
+exportgraphics(gcf,'RRRSinglePoseUSingJacobFunction.gif','Append',true);
 end
 figure(); plot(tAr,xdAr,'--',tAr,xAr), title('End-effector position and orientation')
 figure(); plot(tAr,eAr), title('Carterian error')
