@@ -44,6 +44,7 @@ for t = 1:length(T)
     end
          
     pause(dt)
+    exportgraphics(gcf,'RobotTracking.gif','Append',true);
 end
 hold off
 
@@ -65,6 +66,7 @@ for t = 1:length(T)
     grid on
     
     pause(dt)
+    exportgraphics(gcf,'RobotPosition.gif','Append',true);
 end
 
 end
